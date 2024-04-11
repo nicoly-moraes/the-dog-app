@@ -1,0 +1,122 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #ffefef;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF1919;
+    height: 68px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-dog {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.card-dog-body {
+    display: flex;
+    gap: 60px;
+    width: 100%;
+    align-items: center;
+}
+
+.card-dog .dog-image img {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dog-info {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dog-info p {
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.card-body-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.btn-dog-radom {
+    background-color: #FF1919;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    padding: 8px 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-dog-radom:hover {
+    opacity: 0.9;
+}
+
+.card-dog-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 484px;
+}
+
+.dog-loader {
+    width: 100px;
+    height: 100px;
+    border: 10px solid red;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .card-dog-body {
+        flex-direction: column;
+    }
+
+    .card-dog .dog-image img {
+        width: 100%;
+    }
+}
